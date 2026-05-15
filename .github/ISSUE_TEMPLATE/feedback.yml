@@ -1,0 +1,29 @@
+name: Website feedback
+description: Suggest a change or report something that looks off
+labels: ["feedback"]
+body:
+  - type: dropdown
+    id: page
+    attributes:
+      label: Which page?
+      options:
+        - Home
+        - About
+        - Functions
+        - Contact
+        - Multiple / general
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: What would you like to change?
+      description: Plain English is fine — copy edits, layout tweaks, photo swaps, missing info, anything.
+      placeholder: e.g. The opening hours on the Contact page need to change to 11am – 9pm on Saturday
+    validations:
+      required: true
+  - type: textarea
+    id: priority
+    attributes:
+      label: How important / urgent?
+      placeholder: e.g. Must-fix before go-live / Nice-to-have / Just an idea
