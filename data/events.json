@@ -1,0 +1,23 @@
+{
+  "_comment": "What's On — upcoming events at The Far Post. Edit this file to update the homepage event grid. Each event: { date (ISO yyyy-mm-dd), title, tag, description }.",
+  "events": [
+    {
+      "date": "2026-05-22",
+      "title": "Friday Night Football",
+      "tag": "Every Friday",
+      "description": "All the action on the big screen. Bistro open, draught beers flowing."
+    },
+    {
+      "date": "2026-05-30",
+      "title": "MUFC Women's Home Game",
+      "tag": "Match Day",
+      "description": "Manly United Women at Cromer Park. Pull up a pew on the deck."
+    },
+    {
+      "date": "2026-06-07",
+      "title": "MUFC Men's Home Game",
+      "tag": "Match Day",
+      "description": "Manly United Men at home. Bistro open, kitchen open from kick-off."
+    }
+  ]
+}

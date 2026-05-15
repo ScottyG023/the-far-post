@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Far Post · Cromer Park · Drinks · Functions · Great Food</title>
+  <meta name="description" content="The Far Post is a modern licensed club at Cromer Park on Sydney's Northern Beaches. Bar, bistro and function venue, home of Manly United FC supporters." />
+  <meta name="theme-color" content="#1f3a8c" />
+
+  <meta property="og:title" content="The Far Post" />
+  <meta property="og:description" content="Bar, bistro and function venue at Cromer Park. Northern Beaches." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/png" href="images/farpost-logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-mark" aria-label="The Far Post home">
+        <img src="images/farpost-logo.png" alt="" />
+        <span class="wordmark">
+          <span class="top">The Far Post</span>
+          <span class="bot">Drinks · Functions · Great Food</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="functions.html">Functions</a>
+        <a href="contact.html">Contact</a>
+        <a href="functions.html" class="btn btn-primary btn-sm">Book a Function</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="rise">
+            <span class="eyebrow">Cromer Park · Northern Beaches</span>
+            <h1>Drinks. Functions.<br><em>Great food.</em></h1>
+            <p class="lede">
+              The Far Post is a modern licensed club at Cromer Park, home to Manly United and the broader Northern Beaches football community. Pull up a chair on our sun-drenched deck, grab a beer with friends, or book the perfect function room.
+            </p>
+
+            <div class="hero-cta-row">
+              <a href="functions.html" class="btn btn-primary btn-arrow">
+                Book a Function
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 5l7 7-7 7"/></svg>
+              </a>
+              <a href="contact.html" class="btn btn-ghost">Reserve a Table</a>
+            </div>
+
+            <div class="hours-pill" id="hoursPill">
+              <span id="hoursPillText">Checking opening hours…</span>
+            </div>
+          </div>
+
+          <div class="rise d2">
+            <div class="hero-image-frame">
+              <img src="images/food-spread.jpg" alt="A spread of dishes at The Far Post — burgers, mini tacos and bistro favourites" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Welcome / pull -->
+  <section class="section section-paper">
+    <div class="container-narrow" style="text-align: center;">
+      <span class="section-eyebrow">Welcome</span>
+      <h2 class="section-title">The best family and socially-driven club on the Northern Beaches.</h2>
+      <div class="divider-line" style="margin-left: auto; margin-right: auto;"></div>
+      <p class="section-lead" style="margin: 0 auto;">
+        Great drinks. Great food. A relaxed atmosphere whether you're sitting inside or on our viewing deck — overlooking Cromer Park's No. 1 synthetic field. The Far Post is perfect for any occasion.
+      </p>
+    </div>
+  </section>
+
+  <!-- Hours + Membership -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="section-head centered">
+        <span class="section-eyebrow">Hours &amp; Membership</span>
+        <h2 class="section-title">Open seven days.</h2>
+        <div class="divider-line"></div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem;">
+        <style>@media (min-width: 880px){ .hours-membership-grid { grid-template-columns: 1fr 1fr !important; gap: 2rem !important; } }</style>
+        <div class="hours-membership-grid" style="display: grid; grid-template-columns: 1fr; gap: 1.5rem;">
+
+          <div class="hours-card">
+            <h3 style="font-size: 1.2rem; margin-bottom: 1rem;">Standard opening hours</h3>
+            <ul class="hours-list">
+              <li><span class="day">Mon – Thu</span><span class="time">3pm – 7pm</span></li>
+              <li><span class="day">Friday</span><span class="time">12pm – 8pm</span></li>
+              <li><span class="day">Saturday</span><span class="time">12pm – 8pm</span></li>
+              <li><span class="day">Sunday</span><span class="time">12pm – 7pm</span></li>
+            </ul>
+            <p class="hours-note">Hours extend for games and events at Cromer Park.</p>
+          </div>
+
+          <div class="membership-card">
+            <h3>Become a Member</h3>
+            <p style="position: relative; color: rgba(255,255,255,0.92); margin-top: 0.75rem;">Ask our friendly staff next time you visit.</p>
+            <div class="price-row">
+              <div>
+                <div class="price">$10</div>
+                <div class="price-sub">1-year membership</div>
+              </div>
+              <div>
+                <div class="price">$20</div>
+                <div class="price-sub">5-year membership</div>
+              </div>
+            </div>
+            <p class="perk">Members enjoy <strong>10% off all bar purchases</strong> when they present their card.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What's On -->
+  <section class="section section-paper">
+    <div class="container">
+      <div class="section-head centered">
+        <span class="section-eyebrow">What's On</span>
+        <h2 class="section-title">Upcoming at The Far Post</h2>
+        <div class="divider-line"></div>
+        <p class="section-lead" style="margin: 0 auto;">
+          Match days, Friday Night Football, Manly United home games — there's always something happening.
+        </p>
+      </div>
+
+      <div class="event-grid" id="eventGrid">
+        <!-- Populated from data/events.json -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature pair: Functions + Food -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="section-head centered">
+        <span class="section-eyebrow">More at The Far Post</span>
+        <h2 class="section-title">Make a night of it.</h2>
+        <div class="divider-line"></div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem;">
+        <style>@media (min-width: 880px){ .feature-pair-grid { grid-template-columns: 1fr 1fr !important; gap: 2rem !important; } }</style>
+        <div class="feature-pair-grid" style="display: grid; grid-template-columns: 1fr; gap: 1.5rem;">
+
+          <a href="functions.html" class="feature-card" style="text-decoration: none; color: inherit;">
+            <div class="feature-image" style="background-image: url('images/functions-setup.jpg');"></div>
+            <div class="feature-body">
+              <span class="section-eyebrow" style="margin-bottom: 0.3rem;">Functions</span>
+              <h3>Host your next event</h3>
+              <p>From 10 people to 200, lunch to dinner, corporate meetings to special occasions. Full AV, multiple catering options, available seven days.</p>
+              <span class="btn btn-ghost btn-sm" style="align-self: flex-start;">
+                See packages
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <a href="about.html" class="feature-card" style="text-decoration: none; color: inherit;">
+            <div class="feature-image" style="background-image: url('images/chef-plating.jpg');"></div>
+            <div class="feature-body">
+              <span class="section-eyebrow" style="margin-bottom: 0.3rem;">The Bistro</span>
+              <h3>Club favourites, done properly</h3>
+              <p>Our bistro offers a broad range of food, catered by award-winning Silver Pantry. Five draught beers on tap. Wine, spirits, and a drink for everyone.</p>
+              <span class="btn btn-ghost btn-sm" style="align-self: flex-start;">
+                About The Far Post
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="section section-navy">
+    <div class="container-narrow" style="text-align: center;">
+      <h2 class="section-title" style="color: #fff;">See you on the deck.</h2>
+      <p class="section-lead" style="margin: 0.5rem auto 2rem;">Table reservations highly recommended, especially on match days.</p>
+      <div class="hero-cta-row" style="justify-content: center;">
+        <a href="contact.html" class="btn btn-primary btn-arrow">
+          Reserve a Table
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="mailto:thefarpost@mwfa.com.au?subject=The%20Far%20Post%20%E2%80%93%20Enquiry" class="btn btn-ghost-light">Email Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/farpost-logo.png" alt="The Far Post" />
+          <p class="footer-blurb">
+            A modern licensed club at Cromer Park, home of Manly United FC. Drinks, functions and great food on Sydney's Northern Beaches.
+          </p>
+        </div>
+        <div>
+          <div class="footer-heading">The Far Post</div>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.45rem; font-size: 0.95rem;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="functions.html">Functions</a></li>
+            <li><a href="contact.html">Contact &amp; Bookings</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Find us</div>
+          <p style="font-size: 0.95rem; margin: 0 0 0.5rem;">Cromer Park<br>South Creek Road, Cromer NSW</p>
+          <p style="font-size: 0.95rem; margin: 0 0 1rem;"><a href="mailto:thefarpost@mwfa.com.au?subject=The%20Far%20Post%20%E2%80%93%20Enquiry">thefarpost@mwfa.com.au</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 The Far Post</div>
+        <div>Cromer Park · Northern Beaches · NSW</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/events.js"></script>
+</body>
+</html>

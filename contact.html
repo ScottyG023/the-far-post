@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact &amp; Reservations · The Far Post</title>
+  <meta name="description" content="Reserve a table at The Far Post at Cromer Park. Opening hours, location and contact details." />
+  <meta name="theme-color" content="#1f3a8c" />
+
+  <link rel="icon" type="image/png" href="images/farpost-logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-mark" aria-label="The Far Post home">
+        <img src="images/farpost-logo.png" alt="" />
+        <span class="wordmark">
+          <span class="top">The Far Post</span>
+          <span class="bot">Drinks · Functions · Great Food</span>
+        </span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="functions.html">Functions</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="functions.html" class="btn btn-primary btn-sm">Book a Function</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container-narrow">
+      <span class="eyebrow">Contact &amp; Reservations</span>
+      <h1>Reserve your table.</h1>
+      <p class="lede">
+        Table reservations are highly recommended, especially on match days at Cromer Park.
+      </p>
+    </div>
+  </section>
+
+  <!-- Find us + Hours -->
+  <section class="section section-paper">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr; gap: 2rem;">
+        <style>@media (min-width: 880px){ .find-grid { grid-template-columns: 1.4fr 1fr !important; } }</style>
+        <div class="find-grid" style="display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: start;">
+
+          <div>
+            <span class="section-eyebrow">Find us</span>
+            <h2 class="section-title">Cromer Park</h2>
+            <div class="divider-line"></div>
+
+            <p style="font-size: 1.05rem; margin-bottom: 1.25rem;">
+              <strong style="color: var(--fp-navy);">The Far Post</strong><br>
+              Cromer Park<br>
+              South Creek Road, Cromer NSW
+            </p>
+            <p style="font-size: 1.05rem; margin-bottom: 0.5rem;">
+              <strong style="color: var(--fp-navy);">Email</strong>
+              <a href="mailto:thefarpost@mwfa.com.au?subject=The%20Far%20Post%20%E2%80%93%20Enquiry" style="color: var(--fp-red); font-weight: 600;">thefarpost@mwfa.com.au</a>
+            </p>
+
+            <div style="margin-top: 1.5rem; border-radius: 1rem; overflow: hidden; box-shadow: 0 14px 32px -16px rgba(20,41,107,0.25); aspect-ratio: 16 / 10;">
+              <iframe
+                src="https://www.google.com/maps?q=Cromer+Park+Sydney+NSW&output=embed"
+                width="100%" height="100%" style="border:0;" allowfullscreen=""
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                title="The Far Post at Cromer Park"></iframe>
+            </div>
+          </div>
+
+          <div class="hours-card">
+            <h3 style="font-size: 1.2rem; margin-bottom: 1rem;">Opening hours</h3>
+            <ul class="hours-list">
+              <li><span class="day">Mon – Thu</span><span class="time">3pm – 7pm</span></li>
+              <li><span class="day">Friday</span><span class="time">12pm – 8pm</span></li>
+              <li><span class="day">Saturday</span><span class="time">12pm – 8pm</span></li>
+              <li><span class="day">Sunday</span><span class="time">12pm – 7pm</span></li>
+            </ul>
+            <p class="hours-note">Hours extend for games and events at Cromer Park.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation form -->
+  <section class="section section-cream">
+    <div class="container-narrow">
+      <div class="section-head centered">
+        <span class="section-eyebrow">Reserve a Table</span>
+        <h2 class="section-title">Send us your reservation.</h2>
+        <div class="divider-line"></div>
+        <p class="section-lead" style="margin: 0 auto;">
+          Drop us the details and we'll get back to you to confirm. Or just rock up — we'll always squeeze you in if we can.
+        </p>
+      </div>
+
+      <div id="formSuccess" class="form-success" role="status" aria-live="polite">
+        <h3>Booking request received.</h3>
+        <p style="margin: 0;">We'll be in touch shortly to confirm. Email <a href="mailto:thefarpost@mwfa.com.au" style="color: var(--fp-red); font-weight: 700;">thefarpost@mwfa.com.au</a> if you need anything sooner.</p>
+      </div>
+
+      <form id="reservationForm" class="form-card" novalidate>
+        <div class="form-grid">
+          <div class="field">
+            <label class="field-label" for="name">Name <span class="req">*</span></label>
+            <input class="field-input" type="text" id="name" name="name" required autocomplete="name" />
+            <div class="field-error">Please enter your name.</div>
+          </div>
+          <div class="field">
+            <label class="field-label" for="email">Email <span class="req">*</span></label>
+            <input class="field-input" type="email" id="email" name="email" required autocomplete="email" />
+            <div class="field-error">Please enter a valid email.</div>
+          </div>
+          <div class="field">
+            <label class="field-label" for="phone">Phone <span class="req">*</span></label>
+            <input class="field-input" type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="e.g. 0412 345 678" />
+            <div class="field-error">Please enter a contact phone.</div>
+          </div>
+          <div class="field">
+            <label class="field-label" for="people">Number of people <span class="req">*</span></label>
+            <input class="field-input" type="number" id="people" name="people" min="1" max="50" required placeholder="e.g. 4" />
+            <div class="field-error">Please enter group size.</div>
+          </div>
+          <div class="field">
+            <label class="field-label" for="date">Date <span class="req">*</span></label>
+            <input class="field-input" type="date" id="date" name="date" required />
+            <div class="field-error">Please pick a date.</div>
+          </div>
+          <div class="field">
+            <label class="field-label" for="time">Time <span class="req">*</span></label>
+            <input class="field-input" type="time" id="time" name="time" required />
+            <div class="field-error">Please pick a time.</div>
+          </div>
+          <div class="field full">
+            <label class="field-label" for="seating">Where would you like to sit?</label>
+            <select class="field-select" id="seating" name="seating">
+              <option value="">No preference</option>
+              <option>Inside</option>
+              <option>Outside (deck)</option>
+            </select>
+            <p class="field-help">The deck has the best view of the synthetic pitch — book early on match days.</p>
+          </div>
+          <div class="field full">
+            <label class="field-label" for="notes">Anything we should know?</label>
+            <textarea class="field-textarea" id="notes" name="notes" placeholder="Allergies, special occasion, etc."></textarea>
+          </div>
+        </div>
+
+        <div style="margin-top: 1.75rem; display: flex; flex-wrap: wrap; gap: 1.25rem; align-items: center;">
+          <button type="submit" class="btn btn-primary btn-arrow" id="submitBtn">
+            Submit reservation
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 5l7 7-7 7"/></svg>
+          </button>
+          <p style="font-size: 0.92rem; color: var(--fp-muted); margin: 0;">
+            Or email <a href="mailto:thefarpost@mwfa.com.au?subject=The%20Far%20Post%20%E2%80%93%20Table%20Reservation" style="color: var(--fp-red); font-weight: 700;">thefarpost@mwfa.com.au</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/farpost-logo.png" alt="The Far Post" />
+          <p class="footer-blurb">
+            A modern licensed club at Cromer Park, home of Manly United FC. Drinks, functions and great food on Sydney's Northern Beaches.
+          </p>
+        </div>
+        <div>
+          <div class="footer-heading">The Far Post</div>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.45rem; font-size: 0.95rem;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="functions.html">Functions</a></li>
+            <li><a href="contact.html">Contact &amp; Bookings</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Find us</div>
+          <p style="font-size: 0.95rem; margin: 0 0 0.5rem;">Cromer Park<br>South Creek Road, Cromer NSW</p>
+          <p style="font-size: 0.95rem; margin: 0 0 1rem;"><a href="mailto:thefarpost@mwfa.com.au?subject=The%20Far%20Post%20%E2%80%93%20Enquiry">thefarpost@mwfa.com.au</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 The Far Post</div>
+        <div>Cromer Park · Northern Beaches · NSW</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/form.js" data-form="reservationForm" data-subject="The Far Post – Table Reservation"></script>
+</body>
+</html>
